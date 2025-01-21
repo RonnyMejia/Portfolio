@@ -1,0 +1,88 @@
+@use '../base/variables' as v;
+
+.contacto h2 {
+    font-size: 40px;
+}
+
+
+.contact-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(231, 245, 193, 0.212);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #8b949e;
+}
+
+input,
+textarea {
+    background-color: #0d1117;
+    border: 1px solid #949b32;
+    padding: 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #8b949e;
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 5px v.$primario;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.submit-btn {
+    background-color: v.$primario;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.4rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #e9d51f;
+}
+
+.submit-btn:active {
+    background-color: #bcc726;
+}

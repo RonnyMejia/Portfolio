@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <meta name="description">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <div class="encabezado-container">
+    <header class="encabezado">
+      <nav>
+        <ul class="encabezado__navegacion">
+          <li class="encabezado__navegacion--elemento" aria-label="Enlace a la página Home"><a href="#inicio">Inicio</a></li>
+          <li class="encabezado__navegacion--elemento" aria-label="Enlace a la página Portfolio"><a href="#sobre-mi">Sobre
+              mí</a>
+          </li>
+          <li class="encabezado__navegacion--elemento" aria-label="Enlace a la página Blog"><a href="#proyectos">Proyectos</a>
+          </li>
+          <li class="encabezado__navegacion--elemento" aria-label="Enlace a la página Pages"><a href="#habilidades">Habilidades</a>
+          </li>
+          <li class="encabezado__navegacion--elemento" aria-label="Enlace a la página Contact"><a href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+  </div>
+
+  <main>
+    <section id="inicio" class="presentation">
+      <article class="presentation__info">
+        <h1>Hola!, Soy Ronny Mejía</h1>
+        <h2>FrontEnd</h2>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/ronny-ma11-zuleta/" target="_blank" class="contact-button">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+            LinkedIn
+          </a>
+          <a href="https://github.com/RonnyMejia" target="_blank" class="contact-button">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+            GitHub
+          </a>
+          <a href="mailto:ronnymijiazuleta@gmail.com" class="contact-button">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail">
+            Gmail
+          </a>
+          <a href="https://wa.me/573227798946" target="_blank" class="contact-button">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+            WhatsApp
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <section class="about">
+      <div id="sobre-mi" class="about-section cuadro">
+        <h2>Sobre mí</h2>
+        <p>
+          Soy <strong>Ronny Mejía</strong>, un programador apasionado de Colombia por el <strong>desarrollo
+            web</strong> y el aprendizaje continuo en tecnología. Mi enfoque principal está en el <strong>desarrollo
+            front-end</strong>,
+          con experiencia en herramientas modernas como <strong>React</strong>, <strong>Next.js</strong> y
+          <strong>Three.js</strong>,
+          las cuales utilizo para crear <strong>interfaces interactivas</strong> y <strong>visualmente
+            atractivas</strong>.
+        </p>
+        <p>
+          He trabajado en diversos proyectos, desde el <strong>diseño de aplicaciones dinámicas</strong> hasta la
+          <strong>integración de bases de datos en la nube</strong> con <strong>AWS</strong> y <strong>Python</strong>.
+          Mi interés
+          por la <strong>tecnología</strong> y la <strong>innovación</strong> me motiva a buscar <strong>soluciones
+            eficientes</strong>
+          y <strong>escalables</strong>, que brinden una <strong>experiencia de usuario</strong> de alta calidad.
+        </p>
+        <p>
+          Soy un <strong>autodidacta</strong> que disfruta enfrentarse a <strong>desafíos complejos</strong> y colaborar
+          en equipos
+          para alcanzar <strong>objetivos comunes</strong>. Mi objetivo es combinar <strong>creatividad</strong>,
+          <strong>funcionalidad</strong>
+          y <strong>tecnología</strong> para desarrollar aplicaciones que generen un <strong>impacto
+            significativo</strong> y aporten
+          <strong>valor</strong>.
+        </p>
+      </div>
+      <div class="figuras volteado">
+        <img class="circulo rotateCircle" src="/src/img/angel.png" alt="Ángel con alas" />
+        <img class="perfil rotateCircle" src="src/img/perfil.png" alt="perfil" loading="lazy" />
+        <img class="nube rotateCircle" src="/src/img/nube.png" alt="Nube flotante" />
+      </div>
+
+
+    </section>
+
+    <section id="proyectos" class="projects estilo">
+      <header class="cuadro">
+        <h2>Proyectos</h2>
+      </header>
+      <article>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="product-content">
+                <div class="product-txt">
+                  <div id="video" class="product-video">
+                    <video autoplay muted loop>
+                      <source src="src/video/PRO3.mp4" type="video/mp4">
+                      Tu navegador no soporta la etiqueta de video.
+                    </video>
+                    <div class="overlay">
+                      <h2>Encriptador</h2>
+                      <p>Herramienta interactiva creada para encriptar y desencriptar textos. Cuenta con un diseño
+                        moderno y funcional, incluyendo un historial y botones bien organizados para realizar las
+                        acciones. Ideal para proyectos educativos o demostraciones técnicas.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-content">
+                <div class="product-txt">
+                  <div id="video" class="product-video">
+                    <video autoplay muted loop>
+                      <source src="src/video/PRO2.mp4" type="video/mp4">
+                      Tu navegador no soporta la etiqueta de video.
+                    </video>
+                    <div class="overlay">
+                      <h2>BlogDeCafé</h2>
+                      <p>Un blog dedicado a los amantes del café. Ofrece consejos, recetas y cursos relacionados con el
+                        mundo del café. Utiliza imágenes de alta calidad como fondo para crear una atmósfera acogedora y
+                        profesional.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="swiper-slide">
+              <div class="product-content">
+                <div class="product-txt">
+                  <div id="video" class="product-video">
+                    <video autoplay muted loop>
+                      <source src="src/video/PRO1.mp4" type="video/mp4">
+                      Tu navegador no soporta la etiqueta de video.
+                    </video>
+                    <div class="overlay">
+                      <h2>FrontEnd Store</h2>
+                      <p>Página web diseñada para representar una tienda en línea moderna. Incluye un diseño llamativo
+                        con colores vibrantes, un encabezado prominente con navegación y secciones destacadas como
+                        "Sobre Nosotros". Ideal para comercio electrónico o proyectos de diseño frontend.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+
+    <section id="habilidades" class="skills-section">
+      <h2>Habilidades ✂️</h2>
+      <div class="skills-slider">
+        <div class="skills-track">
+          <img src="src/img/JavaScript-logo.png" alt="Image 1">
+          <img src="src/img/react-logo.png" alt="Image 2">
+          <img src="src/img/scss-logo.png" alt="Image 3">
+          <img src="src/img/three-logo.png" alt="Image 4">
+          <img src="src/img/talwind-logo.jpeg" alt="Image 5">
+          <img src="src/img/vue-logo.jpeg" alt="Image 6">
+          <img src="src/img/typescript-logo.png" alt="Image 7">
+        </div>
+      </div>
+
+
+
+    </section>
+
+
+    <section id="contacto" class="contacto">
+      <h2>Contacto</h2>
+      <div class="contact-container">
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Tu nombre</label>
+            <input type="text" id="name" placeholder="Escribe tu nombre">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Teléfono</label>
+              <input type="tel" id="phone" placeholder="Escribe tu teléfono">
+            </div>
+            <div class="form-group">
+              <label for="email">Correo</label>
+              <input type="email" id="email" placeholder="Escribe tu correo">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Asunto</label>
+            <input type="text" id="subject" placeholder="Escribe el asunto">
+          </div>
+          <div class="form-group">
+            <label for="message">Tema</label>
+            <textarea id="message" rows="4" placeholder="Escribe tu mensaje"></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__info">
+      <p>@Copyright . Ronny | All Rights Reserved</p>
+    </div>
+  </footer>
+</body>
+
+<script type="module" src="src/js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+  });
+</script>
+<canvas id="bg"></canvas>
+
+</html>

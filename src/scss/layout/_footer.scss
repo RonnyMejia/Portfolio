@@ -1,0 +1,19 @@
+@use '../base/variables' as v;
+
+.footer__info {
+    color: v.$blanco;
+    text-align: center;
+
+    height: 5rem;
+    background-color: v.$oscuro;
+    border-top: 2px solid v.$primario;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    z-index: 100;
+}

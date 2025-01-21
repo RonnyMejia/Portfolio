@@ -1,0 +1,78 @@
+@use '../base/variables' as v;
+@use '../base/mixin' as m;
+  
+
+  .skills-section {
+    height: 300px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .skills-slider {
+    background: rgba(231, 245, 193, 0.212);
+    border-radius: 10px; 
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    padding: 30px;
+    position: relative;
+    width: 600px;
+    overflow: hidden;
+    margin-top: 40px
+  }
+
+  .skills-slider::before,
+.skills-slider::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px; 
+  z-index: 2;
+  pointer-events: none; 
+}
+
+.skills-slider::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(16, 16, 16, 1), rgba(16, 16, 16, 0));
+}
+
+.skills-slider::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(16, 16, 16, 1), rgba(16, 16, 16, 0));
+}
+
+  
+  .skills-track {
+    display: flex;
+    gap: 30px;
+    animation: scroll 15s linear infinite;
+  }
+
+  .skills-track img {
+    width: 100px;
+    height: 90px;
+    object-fit: contain;
+    transition: all 0.4s ease; /* Suaviza la transición */
+    border-radius: 30%;
+  }
+  
+  .skills-track img:hover {
+    transform: scale(1.1);
+    border-radius: 30%;
+    box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.5), /* Luz difusa */
+                0 0 30px 15px rgba(255, 255, 255, 0.3); /* Extiende el efecto */
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-159%);
+    }
+  }
+  

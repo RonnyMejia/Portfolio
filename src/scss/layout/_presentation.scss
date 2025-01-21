@@ -1,0 +1,53 @@
+@use '../base/variables' as v;
+@use '../base/mixin' as m;
+
+
+
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40.69px;
+  margin-bottom: 0;
+}
+.presentation__info {
+  padding: 50px;
+  background: v.$dark-bg;
+  height: 200px;
+  width: 500px;
+}
+
+
+.contact-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.contact-button img {
+  width: 24px;
+  height: 24px;
+}
+
+.contact-button:hover {
+  background: rgba(238, 215, 11, 0.473);
+  box-shadow: 0 4px 15px rgba(136, 109, 109, 0.2);
+  transform: scale(1.05);
+}

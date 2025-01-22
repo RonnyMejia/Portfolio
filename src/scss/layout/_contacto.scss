@@ -2,8 +2,15 @@
 
 .contacto h2 {
     font-size: 40px;
-}
 
+    @media (max-width: v.$tablet) {
+        font-size: 30px;
+    }
+
+    @media (max-width: v.$telefono) {
+        font-size: 24px;
+    }
+}
 
 .contact-container {
     width: 100%;
@@ -12,29 +19,57 @@
     background: rgba(231, 245, 193, 0.212);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    @media (max-width: v.$tablet) {
+        padding: 15px;
+    }
+
+    @media (max-width: v.$telefono) {
+        max-width: 90%;
+    }
 }
 
 h1 {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
+
+    @media (max-width: v.$tablet) {
+        font-size: 1.8rem;
+    }
+
+    @media (max-width: v.$telefono) {
+        font-size: 1.5rem;
+    }
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    @media (max-width: v.$telefono) {
+        gap: 15px;
+    }
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
+
+    @media (max-width: v.$tablet) {
+        gap: 10px;
+    }
 }
 
 label {
     font-size: 0.9rem;
     margin-bottom: 5px;
     color: #8b949e;
+
+    @media (max-width: v.$telefono) {
+        font-size: 0.8rem;
+    }
 }
 
 input,
@@ -46,6 +81,11 @@ textarea {
     color: #ffffff;
     font-size: 1rem;
     outline: none;
+
+    @media (max-width: v.$telefono) {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
 }
 
 input::placeholder,
@@ -61,6 +101,11 @@ textarea:focus {
 .form-row {
     display: flex;
     gap: 10px;
+
+    @media (max-width: v.$tablet) {
+        flex-direction: column;
+        gap: 15px;
+    }
 }
 
 .form-row .form-group {
@@ -77,6 +122,16 @@ textarea:focus {
     font-size: 1.4rem;
     text-align: center;
     transition: background-color 0.3s ease;
+
+    @media (max-width: v.$tablet) {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    @media (max-width: v.$telefono) {
+        font-size: 1rem;
+        padding: 8px;
+    }
 }
 
 .submit-btn:hover {

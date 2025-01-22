@@ -12,7 +12,7 @@
 ---
 
 ## 🛠️ Habilidades técnicas
-- **Frontend**: HTML, CSS, JavaScript, React, TypeScript, Tailwind CSS.
+- **Frontend**: HTML, CSS, SCSS, JavaScript, React, TypeScript, Tailwind CSS.
 - **Backend**: Node.js, Express, Python, Java, APIs RESTful.
 - **Herramientas**: Git, GitHub, VS Code, Postman, Supabase.
 

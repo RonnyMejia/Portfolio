@@ -55,15 +55,15 @@
     width: 100px;
     height: 90px;
     object-fit: contain;
-    transition: all 0.4s ease; /* Suaviza la transición */
+    transition: all 0.4s ease; 
     border-radius: 30%;
   }
   
   .skills-track img:hover {
     transform: scale(1.1);
     border-radius: 30%;
-    box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.5), /* Luz difusa */
-                0 0 30px 15px rgba(255, 255, 255, 0.3); /* Extiende el efecto */
+    box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.5), 
+                0 0 30px 15px rgba(255, 255, 255, 0.3); 
     background: linear-gradient(145deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
   }
   

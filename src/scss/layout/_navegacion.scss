@@ -1,10 +1,10 @@
 @use '../base/variables' as v;
 @use '../base/mixin' as m;
 
-
-.encabezado__navegacion  {
+.encabezado__navegacion {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 0;
     position: fixed;
     top: 0;
@@ -13,84 +13,56 @@
     padding: 10px 0;
     text-align: center;
     z-index: 100;
-    /* Asegura que la navbar esté encima del canvas de Three.js */
+
+    nav {
+        display: flex;
+        gap: 20px;
+
+        @media (max-width: v.$tablet) {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        @media (max-width: v.$telefono) {
+            gap: 5px;
+        }
+    }
+
+    li {
+        list-style: none;
+        color: v.$blanco;
+        margin: 0 15px;
+        font-size: 18px;
+
+        @media (max-width: v.$tablet) {
+            font-size: 16px;
+            margin: 0 10px;
+        }
+
+        @media (max-width: v.$telefono) {
+            font-size: 14px;
+            margin: 0 5px;
+        }
+    }
+
+    a {
+        color: v.$blanco;
+        text-decoration: none;
+        margin: 1rem;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: v.$primario;
+        }
+
+        @media (max-width: v.$tablet) {
+            margin: 0.8rem;
+            font-size: 16px;
+        }
+
+        @media (max-width: v.$telefono) {
+            margin: 0.5rem;
+            font-size: 14px;
+        }
+    }
 }
-
-nav li {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.encabezado__navegacion a {
-    color: v.$blanco;
-    text-decoration: none;
-    margin: 1rem;
-}
-
-
-// .header {
-//     background-color: v.$verde;
-
-
-//     @include m.tablet {
-//         &.fixed {
-//             position: fixed;
-//             left: 0;
-//             top: 0;
-//             width: 100%;
-//             box-shadow: .1rem .2rem .3rem #333;
-//             z-index: 10;
-//         }
-//     }
-
-
-//     .contenido-header {
-//         padding: 2rem;
-
-//         @include m.tablet {
-//             display: flex;
-//             justify-content: space-between;
-//             align-items: center;
-//         }
-//     }
-
-//     h1 {
-//         color: v.$blanco;
-//         text-align: center;
-
-//         @include m.tablet {
-//             margin: 0;
-//             text-align: left;
-//         }
-//     }
-// }
-
-
-// .navegacion-principal {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     gap: 2rem;
-
-//     @include m.tablet {
-//         flex-direction: row;
-//     }
-
-//     a {
-//         color: v.$blanco;
-//         font-size: 2.4rem;
-
-//         &:hover,
-//         &.active {
-//             color: v.$amarillo;
-//         }
-//     }
-// }
-
-// @mixin contenedor {
-//     width: 95%;
-//     max-width: 120rem;
-//     margin: 0 auto;
-// }

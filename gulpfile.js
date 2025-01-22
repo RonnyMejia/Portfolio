@@ -17,7 +17,7 @@ export function css(done) {
     src('src/scss/app.scss', { sourcemaps: true })
         .pipe(sass({ outputStyle: 'compressed' }).on('error', handleError))
         .pipe(dest('dist/css', { sourcemaps: '.' }))
-        .pipe(server.stream()); // Inyecta CSS actualizado sin recargar toda la página
+        .pipe(server.stream()); 
 
     done();
 }
@@ -26,7 +26,7 @@ export function js(done) {
     src('src/js/app.js')
         .pipe(terser().on('error', handleError))
         .pipe(dest('dist/js'))
-        .pipe(server.stream()); // Recarga el navegador cuando se cambia JS
+        .pipe(server.stream()); 
 
     done();
 }
@@ -34,7 +34,7 @@ export function js(done) {
 export function serve(done) {
     server.init({
         server: {
-            baseDir: './', // Asegúrate de que la raíz del servidor sea la correcta
+            baseDir: './', 
         },
         port: 3000,
     });
@@ -45,7 +45,7 @@ export function serve(done) {
 export function dev() {
     watch('src/scss/**/*.scss', css);
     watch('src/js/**/*.js', js);
-    watch('./*.html').on('change', server.reload); // Recarga la página al cambiar HTML
+    watch('./*.html').on('change', server.reload); 
 }
 
 export default series(css, js, serve, dev);
